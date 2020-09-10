@@ -1,2 +1,2 @@
 # rosetta
-A simplest data catalog ever
+The simplest data catalog ever
