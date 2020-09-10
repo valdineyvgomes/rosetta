@@ -1,0 +1,11 @@
+org/rosetta/RosettaApplication.class
+org/rosetta/repository/UserRepository.class
+org/rosetta/model/Table.class
+org/rosetta/enumeration/Resource.class
+org/rosetta/repository/TableRepository.class
+org/rosetta/model/Relationship.class
+org/rosetta/model/Column.class
+org/rosetta/model/ExternalReference.class
+org/rosetta/model/Database.class
+org/rosetta/model/Rating.class
+org/rosetta/model/User.class

@@ -1,0 +1,11 @@
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/model/Database.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/model/User.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/model/Rating.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/model/Relationship.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/RosettaApplication.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/model/Column.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/model/Table.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/model/ExternalReference.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/repository/UserRepository.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/repository/TableRepository.java
+/home/valdiney/Projetcs/rosetta/src/main/java/org/rosetta/enumeration/Resource.java
