@@ -16,6 +16,8 @@
 package org.rosetta.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -33,11 +35,11 @@ public class Database {
 
     @Indexed(unique = true)
     private String name;
-    private String description;
     private String type;
     private String driver;
     private String url;
     private String username;
+    private List<Definition> definitions = new ArrayList();
 
     @JsonIgnore
     private String password;
@@ -58,14 +60,6 @@ public class Database {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getType() {
@@ -114,6 +108,18 @@ public class Database {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
+    }
+
+    public List<Definition> getDefinitions() {
+        return definitions;
+    }
+
+    public void setDefinitions(List<Definition> columns) {
+        this.definitions = columns;
+    }
+
+    public void addDefinition(Definition definition) {
+        this.definitions.add(definition);
     }
 
     @Override

@@ -15,6 +15,7 @@
  */
 package org.rosetta.model;
 
+import java.util.Objects;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 
 /**
@@ -32,5 +33,32 @@ public class Relationship {
 
     public void setTable(Table table) {
         this.table = table;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 83 * hash + Objects.hashCode(this.table);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Relationship other = (Relationship) obj;
+        return Objects.equals(this.table, other.table);
+    }
+
+    @Override
+    public String toString() {
+        return "Relationship{" + "table=" + table + '}';
     }
 }

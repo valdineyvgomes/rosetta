@@ -24,7 +24,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  *
  * @author Valdiney V GOMES
  */
-public interface TableRepository extends MongoRepository<Table, Long> {
+public interface TableRepository extends MongoRepository<Table, String> {
 
     List<Table> findAllBy(TextCriteria criteria);
 }

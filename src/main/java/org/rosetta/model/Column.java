@@ -27,7 +27,7 @@ public class Column {
 
     private String name;
     private String type;
-    private String description;
+    private List<Definition> definitions = new ArrayList();
     private List<Relationship> relationships = new ArrayList();
     private boolean enabled = true;
 
@@ -47,12 +47,16 @@ public class Column {
         this.type = type;
     }
 
-    public String getDescription() {
-        return description;
+    public List<Definition> getDefinitions() {
+        return definitions;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDefinitions(List<Definition> columns) {
+        this.definitions = columns;
+    }
+
+    public void addDefinition(Definition definition) {
+        this.definitions.add(definition);
     }
 
     public List<Relationship> getRelationships() {

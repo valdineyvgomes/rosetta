@@ -15,16 +15,12 @@
  */
 package org.rosetta.repository;
 
-import org.rosetta.model.Table;
-import java.util.List;
-import org.springframework.data.mongodb.core.query.TextCriteria;
+import org.rosetta.model.Database;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**
  *
  * @author Valdiney V GOMES
  */
-public interface DatabaseRepository extends MongoRepository<Table, Long> {
-
-    List<Table> findAllBy(TextCriteria criteria);
+public interface DatabaseRepository extends MongoRepository<Database, String> {
 }
