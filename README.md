@@ -1,2 +1,2 @@
 # rosetta
-The simplest data catalog ever 2
+The simplest data catalog ever (cat)
