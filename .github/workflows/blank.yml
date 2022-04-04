@@ -22,6 +22,11 @@ on:
         - cschleiden
       message:
         required: true
+      use-emoji:
+        type: boolean
+        description: Include 🎉🤣 emojis
+      environment:
+        type: environment
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -39,3 +44,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: cat ./README.md
+      
+      - name: Run a one-line script
+        run: echo "${{ github.event.inputs.message }}"
